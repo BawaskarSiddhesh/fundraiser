@@ -1,5 +1,5 @@
 import React from 'react';
-import './Donate.css'; // Optional: CSS for styling
+import './Donate.css'; 
 
 const campaigns = [
   {
