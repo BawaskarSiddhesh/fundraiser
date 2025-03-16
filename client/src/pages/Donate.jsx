@@ -74,14 +74,14 @@ const Home = () => {
         </div>
 
         <div className="bg-white p-6 rounded-lg shadow-md text-center">
-          <h4 className="text-lg font-semibold text-gray-900 mb-3">Support for Varun Kulkarni</h4>
+          <h4 className="text-lg font-semibold text-gray-900 mb-3">Support for Digvijay Shetty</h4>
           <p className="text-gray-700 mb-2">Funds Required: ₹25,00,000</p>
           <p className="text-gray-700 mb-2">Campaign ends in 24 Days</p>
           <button className="bg-[#00bcd4] text-white px-4 py-2 rounded-lg">CONTRIBUTE</button>
         </div>
 
         <div className="bg-white p-6 rounded-lg shadow-md text-center">
-          <h4 className="text-lg font-semibold text-gray-900 mb-3">Memorial Fund for Prasad</h4>
+          <h4 className="text-lg font-semibold text-gray-900 mb-3">Memorial Fund for Pranit</h4>
           <p className="text-gray-700 mb-2">Funds Required: ₹25,00,000</p>
           <p className="text-gray-700 mb-2">Campaign ends in 17 Days</p>
           <button className="bg-[#00bcd4] text-white px-4 py-2 rounded-lg">CONTRIBUTE</button>
