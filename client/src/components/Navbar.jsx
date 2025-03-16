@@ -4,7 +4,7 @@ const Navbar = () => {
   return (
     <nav className="bg-[#1882f2] text-white py-4 shadow-md">
       <div className="container mx-auto flex justify-between items-center px-6">
-        <h1 className="text-2xl font-bold">FundIt</h1>
+        <h1 className="text-2xl font-bold">HealFund</h1>
         <ul className="flex space-x-6">
           <li>
             <a href="/" className="hover:underline">
