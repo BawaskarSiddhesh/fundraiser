@@ -1,6 +1,6 @@
 import React from "react";
 
-const Home = () => {
+const Donate = () => {
   return (
     <div className="min-h-screen flex flex-col items-center justify-center bg-gray-100 text-gray-900">
       {/* Hero Section */}
@@ -102,4 +102,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default Donate;
