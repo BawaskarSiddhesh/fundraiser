@@ -22,6 +22,7 @@ const Campaigns = () => {
         onClick={() => setShowSidebar(!showSidebar)} 
         className="fixed left-5 top-20 bg-green-600 text-white px-6 py-3 rounded-lg shadow-lg hover:bg-green-700 transition duration-300 z-20"
       >
+
         Start Your Own Campaign
       </button>
       
