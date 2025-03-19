@@ -7,12 +7,42 @@ const Campaigns = () => {
   const [showSidebar, setShowSidebar] = useState(false);
   
   const campaigns = [
-    { id: 1, title: "Future for 15-Year-Old", funds: "₹50,00,000", days: 3 },
-    { id: 2, title: "Fight Against Relapse", funds: "₹45,00,000", days: 17 },
-    { id: 3, title: "Support Needed for Child", funds: "₹40,00,000", days: 17 },
-    { id: 4, title: "3-Year-Old Needs Help", funds: "₹30,00,000", days: 17 },
-    { id: 5, title: "Support for Digvijay Shetty", funds: "₹25,00,000", days: 24 },
-    { id: 6, title: "Memorial Fund for Pranit", funds: "₹25,00,000", days: 17 },
+    {
+      title: "3-Year-Old Harsh Sharma Needs Your Help", 
+      funds: "₹30,00,000", 
+      days: 13, 
+      image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDAz2YCn0Smkq6kZSlomkWCY_MlTAZziokvg&s" 
+    },
+    { 
+      title: "Our Family's Breadwinner Is Fighting Cancer", 
+      funds: "₹20,00,000", 
+      days: 14, 
+      image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTezhIU_vGPocO3M8a2-N5ldvNB-wvUnpKP7w&s" 
+    },
+    { 
+      title: "Join Mayur Patil's Battle To Fight Third Stage Cancer", 
+      funds: "₹28,00,000", 
+      days: 14, 
+      image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRaKULmIzS5-s1UwsdZLjJCITMdQ8OlU-u0YQ&s"
+    },
+    { 
+      title: "Support Me, Varun Kulkarni, An Actor", 
+      funds: "₹25,00,000", 
+      days: 20, 
+      image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQt2sii9YSrdBHv7EiTb9AEspPwUkBAlsbBnw&s" 
+    },
+    { 
+      title: "Give Life To My Mother, Basanti Kalati", 
+      funds: "₹9,00,000", 
+      days: 20, 
+      image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVU5ztfJ6fdOYU3xAwyXjxb1jdY0dk5D3B5Q&s" 
+    },
+    { 
+      title: "A Few Days Into This World And My Baby Girl Is Fighting", 
+      funds: "₹25,00,000", 
+      days: 7, 
+      image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrNNEd0GfAopgSMXCdWCS7zeu-o9UDmieU5A&s" 
+    },
   ];
 
   return (
@@ -41,9 +71,9 @@ const Campaigns = () => {
               key={campaign.id}
               className="bg-white p-6 rounded-lg shadow-md text-center transition-transform transform hover:scale-105 hover:shadow-xl duration-300"
             >
-              <div className="h-40 bg-gray-300 mb-4 rounded-lg flex items-center justify-center">
-                <span className="text-gray-600">Image Placeholder</span>
-              </div>
+              <div className="h-40 mb-4 rounded-lg flex items-center justify-center overflow-hidden">
+                <img src={campaign.image} alt={campaign.title} className="object-cover h-full w-full" />
+                </div>
               <h4 className="text-lg font-semibold text-gray-900 mb-3">{campaign.title}</h4>
               <p className="text-gray-700 mb-2">Funds Required: {campaign.funds}</p>
               <p className="text-gray-700 mb-2">Campaign ends in {campaign.days} Days</p>
