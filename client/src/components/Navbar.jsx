@@ -1,6 +1,9 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
 const Navbar = () => {
+
+  const navigate = useNavigate()
   return (
     <nav className="bg-[#1882f2] text-white py-4 shadow-md">
       <div className="container mx-auto flex justify-between items-center px-6">
@@ -12,22 +15,22 @@ const Navbar = () => {
             </a>
           </li>
           <li>
-            <a href="/projects" className="hover:underline">
-              Explore Projects
+            <a href="/Campaigns" className="hover:underline">
+              Campaigns
             </a>
           </li>
           <li>
-            <a href="/about" className="hover:underline">
-              About
+            <a href="/donate" className="hover:underline">
+              Donate
             </a>
           </li>
           <li>
-            <a href="/contact" className="hover:underline">
-              Contact
+            <a href="/profile" className="hover:underline">
+              Profile
             </a>
           </li>
         </ul>
-        <button className="bg-white text-[#1882f2] px-4 py-2 rounded-lg shadow-md hover:bg-gray-200 transition">
+        <button onClick={() => (navigate('/sisu'))} className="bg-white text-[#1882f2] px-4 py-2 rounded-lg shadow-md hover:bg-gray-200 transition">
           Sign Up
         </button>
       </div>
