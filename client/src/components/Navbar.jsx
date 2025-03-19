@@ -19,11 +19,7 @@ const Navbar = () => {
               Campaigns
             </a>
           </li>
-          <li>
-            <a href="/donate" className="hover:underline">
-              Donate
-            </a>
-          </li>
+          
           <li>
             <a href="/profile" className="hover:underline">
               Profile
