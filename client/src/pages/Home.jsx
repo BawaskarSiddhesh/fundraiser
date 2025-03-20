@@ -18,15 +18,15 @@ const divStyle = {
 
 const slideImages = [
   {
-    url: 'https://images.unsplash.com/photo-1509721434272-b79147e0e708?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80',
+    url: 'https://images.pexels.com/photos/6647119/pexels-photo-6647119.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
     
   },
   {
-    url: 'https://images.unsplash.com/photo-1506710507565-203b9f24669b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1536&q=80',
+    url: 'https://plus.unsplash.com/premium_photo-1681492068263-85e9b6cfe8a2?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
     
   },
   {
-    url: 'https://images.unsplash.com/photo-1536987333706-fc9adfb10d91?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80',
+    url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSiUzON9jhGOswrArZghHW29B4PAaRVYwUDSQ&s',
     
   },
 ];
@@ -104,36 +104,44 @@ const Home = () => {
     </div>
   ))}
 </div>
-{/* DIRECTING TOWARD DONATION DIV */}
-{/* here we need to create some of the campaign cards from where they will be guided to the campagin pages */}
+{/* How You Helped Section */}
+
 <div className="mt-16 px-6 z-10 relative">
-  <div className="flex mb-8">
-    <div className="w-1/4">
-      <img src="https://images.unsplash.com/photo-1509721434272-b79147e0e708?ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80" alt="Description 1" className="w-full h-auto rounded-l-lg" />
+  <div className="flex flex-col md:flex-row mb-8">
+    <div className="md:w-1/4 mb-4 md:mb-0">
+      <img src="https://images.unsplash.com/photo-1509721434272-b79147e0e708?ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80" alt="Description 1" className="w-full h-auto rounded-lg" />
     </div>
-    <div className="w-3/4 bg-white p-8 rounded-r-lg shadow-md">
-      <h3 className="text-xl font-semibold text-[#1882f2] mb-3">Title 1</h3>
-      <p className="text-gray-700">This is a description for the first section. It provides information about the topic covered in this section.</p>
+    <div className="md:w-3/4 bg-white p-8 rounded-lg shadow-md">
+      <h3 className="text-xl font-semibold text-[#1882f2] mb-3">Joseph stain</h3>
+      <p className="text-gray-700">Joseph Stain was diagnosed with a rare autoimmune disorder that left him constantly battling pain and fatigue. Unable to afford the experimental treatments that might improve his condition, Joseph felt trapped in a cycle of illness and limited options. He decided to launch a crowdfunding campaign to raise money for the treatments that could help him regain his health. Through his heartfelt story, Joseph connected with supporters who had faced similar struggles and wanted to help.
+
+Thanks to the funds raised, Joseph was able to access specialized treatments that improved his condition and allowed him to live a more active life. Today, Joseph is a vocal advocate for autoimmune disease awareness and works to raise funds and support for others facing similar battles. He credits his crowdfunding campaign for not only saving his health but also inspiring him to help others in their fight against chronic illness.</p>
     </div>
   </div>
 
-  <div className="flex mb-8">
-    <div className="w-1/4">
-      <img src="https://images.unsplash.com/photo-1506710507565-203b9f24669b?ixlib=rb-1.2.1&auto=format&fit=crop&w=1536&q=80" alt="Description 2" className="w-full h-auto rounded-l-lg" />
+  <div className="flex flex-col md:flex-row mb-8">
+    <div className="md:w-1/4 mb-4 md:mb-0">
+      <img src="https://images.unsplash.com/photo-1506710507565-203b9f24669b?ixlib=rb-1.2.1&auto=format&fit=crop&w=1536&q=80" alt="Description 2" className="w-full h-auto rounded-lg" />
     </div>
-    <div className="w-3/4 bg-white p-8 rounded-r-lg shadow-md">
-      <h3 className="text-xl font-semibold text-[#1882f2] mb-3">Title 2</h3>
-      <p className="text-gray-700">This is a description for the second section. It provides information about the topic covered in this section.</p>
+    <div className="md:w-3/4 bg-white p-8 rounded-lg shadow-md">
+      <h3 className="text-xl font-semibold text-[#1882f2] mb-3">Amber steven</h3>
+      <p className="text-gray-700">Amber Steven had battled with weight issues and body image struggles for years, trying various diets and fitness plans without lasting success. She realized that she needed a personalized approach to wellness and decided to fund a complete fitness transformation through crowdfunding. By sharing her story of struggle and determination, Amber’s campaign resonated with many people who had faced similar challenges and wanted to help her succeed.
+
+With the funds raised, Amber worked with a personal trainer, nutritionist, and wellness experts, losing over 50 pounds and gaining a renewed sense of self-confidence. Today, Amber is a certified fitness coach, helping others achieve their health and wellness goals while promoting self-love and mental well-being. She believes the crowdfunding campaign was the turning point that not only changed her life but allowed her to inspire countless others to transform their own health.</p>
     </div>
   </div>
 
-  <div className="flex mb-8">
-    <div className="w-1/4">
-      <img src="https://images.unsplash.com/photo-1536987333706-fc9adfb10d91?ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80" alt="Description 3" className="w-full h-auto rounded-l-lg" />
+  <div className="flex flex-col md:flex-row mb-8">
+    <div className="md:w-1/4 mb-4 md:mb-0">
+      <img src="https://images.unsplash.com/photo-1536987333706-fc9adfb10d91?ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80" alt="Description 3" className="w-full h-auto rounded-lg" />
     </div>
-    <div className="w-3/4 bg-white p-8 rounded-r-lg shadow-md">
-      <h3 className="text-xl font-semibold text-[#1882f2] mb-3">Title 3</h3>
-      <p className="text-gray-700">This is a description for the third section. It provides information about the topic covered in this section.</p>
+    <div className="md:w-3/4 bg-white p-8 rounded-lg shadow-md">
+      <h3 className="text-xl font-semibold text-[#1882f2] mb-3">Om Harishyam</h3>
+      <p className="text-gray-700">Om Harishyam’s life took a sharp turn when he was diagnosed with a severe heart condition that threatened his health and future. After multiple hospitalizations, Om knew that prevention and proper treatment were his only hope for recovery. However, the treatments he needed weren’t covered by his insurance, so he decided to launch a crowdfunding campaign to fund his medical expenses and educational resources on heart health.
+
+With the support of the crowdfunding community, Om was able to afford critical treatments, including surgery, and he also gained access to programs focused on heart disease prevention. As his health improved, Om used his experience to launch a wellness consultancy dedicated to heart health education, helping others reduce their risk of heart disease through lifestyle changes. He credits his crowdfunding campaign for not only saving his life but also allowing him to create a lasting impact in the field of preventive health.
+
+</p>
     </div>
   </div>
 </div>
@@ -148,7 +156,14 @@ const Home = () => {
     </div>
     <div className="w-3/4 bg-white p-8 rounded-r-lg shadow-md">
       <h3 className="text-xl font-semibold text-[#1882f2] mb-3">Who We Are</h3>
-      <p className="text-gray-700">We are a passionate team dedicated to empowering individuals and communities through crowdfunding. Our mission is to provide a platform that connects innovative ideas with the resources they need to thrive.</p>
+      <p className="text-gray-700">
+We are a passionate, driven, and dedicated team with a deep commitment to making a positive impact in the world by empowering individuals and communities through the transformative power of crowdfunding. Our vision is to create a platform that serves as a bridge between creative and innovative ideas and the resources necessary to bring those ideas to life. We recognize that every great project starts with a spark of inspiration, and we believe that by providing the right support, guidance, and access to a network of like-minded individuals and supporters, we can turn those sparks into something extraordinary.
+
+Our mission goes beyond simply offering a crowdfunding platform—we are here to foster an ecosystem that enables people to reach their fullest potential, no matter where they are or what they are trying to achieve. Whether it's funding a groundbreaking new business, supporting a life-changing cause, or backing a community-driven project, we believe in the power of collaboration and the strength that comes from collective action. 
+
+We understand that the road to success is not always easy, and that’s why we are here to support every step of the journey. We offer not just a platform, but also the resources, tools, and connections that help our users navigate the challenges of fundraising, reach their goals, and turn their ideas into a reality. Our mission is to inspire confidence and spark creativity, helping individuals and organizations thrive by connecting them with the financial backing, mentorship, and partnerships they need to succeed.
+
+At the core of our work is a belief that everyone has the potential to make a difference, and with the right support, we can unlock incredible opportunities for positive change. We are not just building a crowdfunding platform—we are building a community where dreams can take flight, where people can find the resources they need, and where innovative ideas can transform the world. Our dedication is to help every person, team, or cause find the support they need to turn their passion into impact and to change lives for the better.</p>
     </div>
   </div>
 
@@ -158,7 +173,15 @@ const Home = () => {
     </div>
     <div className="w-3/4 bg-white p-8 rounded-r-lg shadow-md">
       <h3 className="text-xl font-semibold text-[#1882f2] mb-3">What We Do</h3>
-      <p className="text-gray-700">We facilitate crowdfunding campaigns that help bring ideas to life. Our platform allows creators to showcase their projects and connect with supporters who believe in their vision.</p>
+      <p className="text-gray-700">
+
+At the core of our mission, we facilitate crowdfunding campaigns that provide individuals, entrepreneurs, and organizations with the opportunity to bring their most innovative and impactful ideas to life. We understand that every great idea begins with a vision, and we are here to transform that vision into reality. Our platform serves as a dynamic, empowering space where creators, innovators, and change-makers can not only showcase their projects but also connect with a global network of supporters who share their passion and believe in their mission. Whether it's a cutting-edge business venture, a charitable cause, a groundbreaking product, or a creative endeavor, we give people the tools they need to turn their ideas into something meaningful and sustainable.
+
+We believe that crowdfunding is more than just a way to raise money—it's about building a community around an idea. That's why we provide creators with everything they need to tell their story, engage with potential backers, and inspire confidence in those who choose to support them. Our platform allows project owners to craft compelling campaigns, track their progress, and reach a diverse group of people who are eager to help make their vision come to life. From the moment a campaign is launched, we ensure that creators have access to the tools, resources, and guidance necessary to navigate the often complex journey of fundraising. 
+
+What sets us apart is our commitment to fostering genuine relationships between creators and supporters. We believe in the power of connection, trust, and collaboration. Our platform encourages transparency and communication, enabling backers to feel personally invested in the success of the projects they support. Through this process, creators are able to build lasting partnerships, gather feedback, and refine their ideas—all while gaining the financial support they need to move forward. 
+
+Ultimately, our goal is to make the crowdfunding experience not only effective but enriching for everyone involved. By connecting passionate individuals with the resources, funding, and network they need, we help to turn dreams into tangible outcomes. Whether it’s funding a life-changing initiative, launching a groundbreaking product, or supporting an artistic endeavor, we are here to help transform ideas into reality and create lasting, positive change in the world.</p>
     </div>
   </div>
 
@@ -168,7 +191,15 @@ const Home = () => {
     </div>
     <div className="w-3/4 bg-white p-8 rounded-r-lg shadow-md">
       <h3 className="text-xl font-semibold text-[#1882f2] mb-3">What the Community Is About</h3>
-      <p className="text-gray-700">Our community is built on collaboration and support. We believe in the power of collective action and strive to create an inclusive environment where everyone can contribute and benefit.</p>
+      <p className="text-gray-700">Our community is founded on the values of collaboration, support, and mutual growth. We believe in the transformative power of collective action—when individuals unite, share their experiences, and offer their support, they can accomplish remarkable things. In our community, we work together to create an environment where every person’s voice is heard, every idea is valued, and everyone has an opportunity to contribute meaningfully. Whether you’re a creator seeking the resources to bring your project to life or a backer eager to support something you believe in, this community serves as a space where all can collaborate and make an impact.
+
+We are deeply committed to cultivating an inclusive and welcoming space that is open to all. Our community is built on the belief that everyone, regardless of their background or experience, has something valuable to offer. This inclusivity is the foundation upon which we grow—ensuring that everyone, from seasoned entrepreneurs to first-time fundraisers, has access to the resources, knowledge, and networks they need to succeed. Here, we provide an open platform where diverse voices and perspectives come together, creating an environment where innovation and growth can flourish.
+
+At the heart of our community is the idea that collaboration breeds success. We understand that no one succeeds alone, and it's through sharing ideas, offering feedback, and supporting each other's journey that we are able to achieve our greatest potential. By working together, we build not just projects, but relationships, networks, and a culture of shared success. The strength of our community lies in its ability to uplift and empower every individual, allowing them to take their passions further, reach new heights, and ultimately make a difference.
+
+Our commitment to this sense of belonging and connection ensures that every person, whether a creator, supporter, or partner, feels they are part of something larger—something that encourages growth, creativity, and positive change. Together, we form a powerful, collaborative force, where everyone can both contribute and benefit, creating a space that is richer, stronger, and more impactful than any individual effort could ever be. By embracing this collective spirit, we help to build a future where innovation thrives and lasting change is possible.
+
+</p>
     </div>
   </div>
 </div>
