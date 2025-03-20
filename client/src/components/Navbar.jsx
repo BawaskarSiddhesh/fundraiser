@@ -1,11 +1,12 @@
 import React from "react";
-import { useNavigate } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 
 const Navbar = () => {
 
+  const location = useLocation();
   const navigate = useNavigate()
   return (
-    <nav className="bg-[#1882f2] text-white py-4 shadow-md">
+    <nav className=" text-black bg-transparent py-4 shadow-md">
       <div className="container mx-auto flex justify-between items-center px-6">
         <h1 className="text-2xl font-bold">HealFund</h1>
         <ul className="flex space-x-6">
