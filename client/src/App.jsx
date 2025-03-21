@@ -7,6 +7,7 @@ import Campaigns from "./pages/Campaigns";
 import Dashboard from "./pages/Dashboard";
 import Sisu from './pages/Sisu'
 import StartCampaign from "./pages/StartCampaign";
+import Profile from './pages/Profile'
 const App = () => {
 
   const location = useLocation();
@@ -22,6 +23,7 @@ const App = () => {
         <Route path='/Campaigns/:id' element={<Donate />} />
         <Route path='/sisu' element={<Sisu />} />
         <Route path='/start-campaign' element={<StartCampaign />} />
+        <Route path="/profile" element={<Profile />} />
       </Routes>
     </>
   );
@@ -30,4 +32,3 @@ const App = () => {
 export default App
 
 
-//mUy702NoXzxVENPm
