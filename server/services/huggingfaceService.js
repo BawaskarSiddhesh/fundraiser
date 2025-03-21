@@ -9,7 +9,7 @@ const checkHealthFact = async (text) => {
     try {
         const response = await axios.post(
             "https://api-inference.huggingface.co/models/Amanpradhan1/health-fact-check-model",
-            { inputs: text },
+            { inputs: text },  // Make sure text input is in this format
             {
                 headers: {
                     Authorization: `Bearer ${process.env.HUGGINGFACE_API_KEY}`,
@@ -18,15 +18,21 @@ const checkHealthFact = async (text) => {
             }
         );
 
-        // Ensure response data exists and parse the result properly
+        console.log("Hugging Face API Response:", response.data); // Debugging
+
         if (!response.data || response.data.length === 0) {
             throw new Error("Unexpected response from Hugging Face API");
         }
 
+        // Map response to meaningful labels
+        const labelMapping = ["False", "Mixture", "True"]; // Based on model description
+        const prediction = response.data[0]?.label;
+        const confidence = response.data[0]?.score;
+
         return {
             claim: text,
-            verification: response.data[0]?.label || "Unknown",
-            confidence: response.data[0]?.score || 0,
+            verification: labelMapping[prediction] || "Unknown",
+            confidence: confidence || 0,
         };
     } catch (error) {
         console.error("Error calling Hugging Face API:", error.response?.data || error.message);
