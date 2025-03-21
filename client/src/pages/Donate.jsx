@@ -40,7 +40,15 @@ const DonateForm = () => {
     };
 
     return (
-        <div className="flex items-center justify-center min-h-screen bg-blue-600">
+        <div 
+            className="flex items-center justify-center min-h-screen" 
+            style={{ 
+                backgroundImage: `url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjvScGXhWxT9P9TEHJDCRmnTolOFsn-p0PAw&s')`, // Replace with your image URL
+                backgroundSize: 'cover', 
+                backgroundPosition: 'center', 
+                height: '100vh' // Optional: Ensures the background covers the full height of the viewport
+            }}
+        >
             <div className="bg-white p-8 rounded-xl shadow-lg w-full max-w-md">
                 <h2 className="text-2xl font-bold text-center text-gray-800 mb-4">Make a Donation</h2>
                 <form onSubmit={handleSubmit} className="space-y-4">
